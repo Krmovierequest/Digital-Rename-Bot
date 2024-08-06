@@ -10,25 +10,25 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # digital_botz client config
-    API_ID = os.environ.get("API_ID", "")
-    API_HASH = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID = os.environ.get("API_ID", "12850056")
+    API_HASH = os.environ.get("API_HASH", "15564ec4a1a2cbef87c99a9aa9e40b34")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "6656522620:AAGLN6e3rYujnB_T7IhWJt7emZj5biv63mE") 
 
     # premium account string session required 😢 
     STRING_SESSION = os.environ.get("STRING_SESSION", "")
     
     # database config
-    DB_NAME = os.environ.get("DB_NAME","Digital_Rename_Bot")     
-    DB_URL = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","kdbhaifreefire")     
+    DB_URL = os.environ.get("DB_URL","mongodb+srv://kdbhaifreefire:7872278427kd@kdbhaifreefire.sqwqyrn.mongodb.net/?retryWrites=true&w=majority&appName=Kdbhaifreefire")
  
     # other configs
     RKN_PIC = os.environ.get("RKN_PIC", "https://telegra.ph/file/b746aadfe59959eb76f59.jpg")
-    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6705898491').split()]
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002123429361"))
+    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '770434685').split()]
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1001712126409"))
 
     #force subs
     try:
-        FORCE_SUB = int(os.environ.get("FORCE_SUB", "")) 
+        FORCE_SUB = int(os.environ.get("FORCE_SUB", "krbackup")) 
     except:
         FORCE_SUB = os.environ.get("FORCE_SUB", "Digital_Botz")
         
